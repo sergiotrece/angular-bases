@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bases';
+  counter: number = 10;
+
+  increaseBy( value:number ):void{
+
+    this.counter += value;
+  }
+
+  reset( ){
+    this.counter = 10;
+  }
+
+
 }
